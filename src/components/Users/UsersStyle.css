@@ -1,0 +1,17 @@
+.wrap{
+    display: flex;
+}
+
+.UsersBox {
+    width: fit-content;
+    border: 1px solid black;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.UserBox{
+    width: fit-content;
+    border: 1px solid brown;
+    padding: 10px;
+    box-sizing: border-box;
+}
