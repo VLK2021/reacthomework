@@ -4,7 +4,7 @@ import './UsersStyle.css'
 
 export default function Users() {
     let [users, setUsers] = useState([]);
-    let [user, setUser] = useState(null);
+    let [singleUser, setSingleUser] = useState(null);
 
 
     useEffect(() => {
@@ -16,11 +16,11 @@ export default function Users() {
     }, []);
 
     const show = (id) => {
-        let find = users.find(value => value.id===id);
-        console.log(find);
+        let finder = users.find(value => value.id === id);
+        setSingleUser(finder);
     };
 
-    return(
+    return (
         <div className={'wrap'}>
 
             <div className={'UsersBox'}>
@@ -34,9 +34,13 @@ export default function Users() {
                 }
             </div>
 
-
             <div className={'UserBox'}>
-
+                {
+                    singleUser && <h2>
+                        {singleUser?.id} <br/>
+                        {singleUser?.name}
+                    </h2>
+                }
             </div>
 
         </div>
