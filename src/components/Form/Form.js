@@ -21,6 +21,7 @@ const Form = ({update}) => {
                 <div><label>Price: <input type="text" defaultValue={''} {...register('price')}/></label></div>
                 <div><label>Year: <input type="text" defaultValue={''} {...register('year')}/></label></div>
                 <button>save</button>
+                <button>delete</button>
             </form>
         </div>
     );
