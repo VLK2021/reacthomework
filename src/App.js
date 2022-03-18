@@ -10,12 +10,12 @@ function App() {
     const [elements, setElements] = useState([]);
 
     const getFormData = (data) => {
-        setElements([...elements, {id: new Date().getTime(), ...data}])
-    }
+        setElements([...elements, {id: new Date().getTime(), ...data}]);
+    };
 
     const getElementId = (id) => {
         setElements(elements.filter(element => element.id !== id));
-    }
+    };
 
     return (
         <div>
