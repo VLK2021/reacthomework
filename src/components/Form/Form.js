@@ -8,7 +8,6 @@ const Form = ({getFormData}) => {
     const submit = (data) => {
         getFormData(data)
         reset()
-
     };
 
     return (
